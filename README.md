@@ -30,7 +30,8 @@
      · *查询物流状态
 
 **- 管理员**
-CRUD
+
+CRUD：
 · 商品
 · 商品类目
 · 用户
@@ -38,4 +39,12 @@ CRUD
 · 菜单
 · 系统设置（管理员信息修改，支付功能配置）
 
+### 2.2 技术栈
+
+* 后端语言：GoLang(Go语言)
+* 数据库：MySQL8.0
+* 前端框架：vue.js(vue3)
+* API 设计：RESTful API
+* 身份验证：JWT（JSON WEB TOKEN）
+* 部署：Docker
   
