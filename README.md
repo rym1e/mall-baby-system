@@ -63,4 +63,45 @@ CRUD：
 * 个人中心，展示订单信息，需要登录
 * 用户登录与注册
 
+## 三、数据表结构设计和模型设计
+
+### 3.1 用户表
+
+
+| 字段        | 类型     | 说明                           |
+| ----------- | -------- | ------------------------------ |
+| id          | bigint   | 主键，自增ID                   |
+| created_at  | datetime | 创建时间                       |
+| updated_at  | datetime | 更新时间                       |
+| deleted_at  | datetime | 删除时间                       |
+| username    | varchar  | 用户名                         |
+| password    | varchar  | 登录密码                       |
+| phone       | varchar  | 手机号                         |
+| wx_union_id | varchar  | 微信union_id(用来微信扫码登录) |
+| wx_open_id  | varchar  | 微信open_id(用来微信扫码登录)  |
+| avatar      | varchar  | 用户头像                       |
+| sex         | varchar  | 用户性别                       |
+| email       | varchar  | 邮箱                           |
+| remarks     | varchar  | 备注                           |
+| role_id     | bigint   | 角色ID                         |
+|             |          |                                |
+
+对应的数据模型如下所示：
+
+```go
+type SysUser struct {
+	gorm.Model
+	UserName  string `gorm:"column:username;type:varchar(50);" json:"userName"`
+	PassWord  string `gorm:"column:password;type: varchar(36);" json:"passWord"`
+	Phone     string `gorm:"column:phone;type:varchar(20);" json:"phone"`
+	WxUnionId string `gorm:"column: wx_union_id;type:varchar(255);" json:"wxUnionId"`
+	WxOpenId  string `gorm:"column:wx_open_id;type:varchar(255);" json:"wxOpenId"`
+	Avatar    string `gorm:"column:avatar;type:varchar(255);" json:"avatar"`
+	Sex       string `gorm:"column:sex;type:varchar(20);" json:"sex"`
+	Email     string `gorm:"column:email;type:varchar(20);" json:"email"`
+	Remarks   string `gorm:"column:remarks;type:varchar(255);" json:"remarks"`
+	RoleId    uint   `gorm:"column:role_id;type:bigint(20);" json:"roleId"`
+}
+```
+
 
