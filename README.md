@@ -53,9 +53,13 @@ CRUD：
  ![image-20241127210612352](http://picture.xueden.cn/typora/image-20241127210612352.png)
 * 商品列表页：将所有商品以一定顺序排列展示，如销量，价格，新品，并且在页面的左侧设置分类列表，选择这一类即可筛选出相应的商品，可以加上分页功能
 * 详情页，展示商品的详细内容，如图片、名称、价格、数量、详细介绍
+  
   <img width="1171" height="662" alt="image" src="https://github.com/user-attachments/assets/a72d267b-88d0-45e1-883c-bc9c82e76091" />
+  
 * 购物车：需要登录后访问，以列表形式展现已经选购的商品，包含图片，名称，价格，数量，合计数量和总额；删除车内商品，用户可以自动增减数量，自动计算总额
-  <img width="1191" height="673" alt="image" src="https://github.com/user-attachments/assets/d32a4525-0019-481a-87c7-5fd00f5c0abe" />、
+  
+  <img width="1191" height="673" alt="image" src="https://github.com/user-attachments/assets/d32a4525-0019-481a-87c7-5fd00f5c0abe" />
+  
 * 个人中心，展示订单信息，需要登录
 * 用户登录与注册
 
